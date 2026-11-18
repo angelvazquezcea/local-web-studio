@@ -1,0 +1,17 @@
+{
+  "description": "Quiet quality checks: after Claude writes or edits an .html page, run fast local-business checks (viewport, title, call links, WhatsApp format, alt text, JSON-LD). Reports blockers only; silent otherwise. Disable per project with a .lws-no-checks file or LWS_HOOKS=off.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/scripts/check-site.sh\" --hook",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

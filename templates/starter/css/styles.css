@@ -1,0 +1,16 @@
+/*
+  The design for THIS business goes here (brand-discovery → tokens → layout).
+  Start with design tokens, e.g.:
+
+  :root {
+    --color-bg: ;
+    --color-ink: ;
+    --color-brand: ;
+    --color-action: ;   (call / WhatsApp buttons — must stand out, contrast >= 4.5:1)
+    --font-display: ;
+    --font-body: ;
+    --space: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  Fonts: self-host WOFF2 in /fonts with @font-face { font-display: swap; }.
+*/

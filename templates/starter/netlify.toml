@@ -1,0 +1,36 @@
+# local-web-studio — static site on Netlify (client's own account)
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    X-Frame-Options = "SAMEORIGIN"
+    # Allows self-hosted assets + Google Maps iframe. Add analytics domain if used.
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data: https:; frame-src https://www.google.com https://maps.google.com; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirect old URLs when taking over a site (see site-takeover):
+# [[redirects]]
+#   from = "/old-page.html"
+#   to = "/#section"
+#   status = 301
+
+# Preview deploys stay out of Google:
+[context.deploy-preview]
+  [[context.deploy-preview.headers]]
+    for = "/*"
+    [context.deploy-preview.headers.values]
+      X-Robots-Tag = "noindex"

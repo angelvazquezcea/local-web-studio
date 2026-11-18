@@ -1,0 +1,31 @@
+{
+  "name": "local-web-studio",
+  "version": "1.0.0",
+  "description": "Everything a one-person web studio needs to find, sell, build, deliver and maintain websites for local businesses: discovery calls, proposals, brand-led design (no templates), mobile-first static builds, local SEO, Google Business Profile, legal pages, deployment, care plans and sector playbooks from farms to restaurants.",
+  "author": {
+    "name": "Ángel Vázquez Cea",
+    "url": "https://github.com/angelvazquezcea"
+  },
+  "license": "MIT",
+  "keywords": [
+    "local-business",
+    "web-design",
+    "freelance",
+    "agency",
+    "local-seo",
+    "google-business-profile",
+    "small-business",
+    "static-sites",
+    "netlify",
+    "proposals",
+    "client-management"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ],
+  "homepage": "https://github.com/angelvazquezcea/local-web-studio",
+  "repository": "https://github.com/angelvazquezcea/local-web-studio"
+}

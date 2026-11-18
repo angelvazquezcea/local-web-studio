@@ -1,0 +1,27 @@
+{
+  "name": "local-web-studio",
+  "owner": {
+    "name": "Ángel Vázquez Cea",
+    "url": "https://github.com/angelvazquezcea"
+  },
+  "metadata": {
+    "description": "A complete toolkit for freelancers and small studios who build websites for local businesses."
+  },
+  "plugins": [
+    {
+      "name": "local-web-studio",
+      "source": "./",
+      "description": "Find, sell, build, deliver and maintain websites for local businesses. 30+ skills, review agents, slash commands, quiet quality hooks and sector playbooks.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "category": "business",
+      "keywords": [
+        "local-business",
+        "web-design",
+        "freelance",
+        "local-seo",
+        "small-business"
+      ]
+    }
+  ]
+}
